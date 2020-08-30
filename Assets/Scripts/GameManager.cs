@@ -59,14 +59,14 @@ public class GameManager : MonoBehaviour
             SpawnNpc();
         }
 
-        if (players.Count <= 1 || timer >= 30)
+        if (players.Count <= 1) // || timer >= 30
         {
             GameOver();
         }
         else
         {
-            timer += Time.deltaTime;
-            timerUI.text = Mathf.RoundToInt(timer).ToString();
+            //timer += Time.deltaTime;
+            timerUI.text = "No timer set";//Mathf.RoundToInt(timer).ToString();
         }
     }
 
